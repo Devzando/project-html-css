@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+    list-style: none;
+}
+
+li{
+    color: #a8a8b3;
+}
+
+//SECTION COMPANIES
+.container-companies{
+    height: 100vh;
+    background: rgb(17, 17, 18);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-companies .container-texts{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container-companies .container-texts h2{
+    text-align: center;
+    width: 55%;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.container-companies .container-texts p{
+    text-align: center;
+    width: 52%;
+    font-size: 1.1rem;
+}
+
+.container-imgs-companies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-imgs-companies img{
+    width: 80%;
+    height: 60%;
+    margin-right: 25px;
+}
+
+.container-companies ul:nth-child(2){
+    margin-bottom: 40px;
+}
+
+//FOOTER
+footer{
+    height: 74vh;
+    background: rgb(17, 17, 18);
+    border-top: 1px solid rgba(grey, 0.1);
+   
+}
+
+.container-info{
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-info .container-itens-info{
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.container-info .container-logo img{
+    margin-bottom: 40px;
+}
+
+.container-info .container-logo:nth-child(1) p{
+    margin-bottom: 10px;
+}
+
+.container-info ul{
+    margin-top: 5px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-info .container-itens-info ul div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.container-info .container-itens-info ul div li:nth-child(1){
+    color: white;
+}
+
+.container-info .container-itens-info ul div:nth-child(3){
+    margin-bottom: 69px;
+}
+
+
+.container-logos-info{
+    border-top: 1px solid rgba(grey, 0.1);
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    padding: 0 140px 0 140px;
+}
+
+.container-logos-info div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-logos-info div ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.container-logos-info div ul li{
+    background-color: #202024;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-logos-info div ul li i{
+    font-size: 25px;
+    color: #8257e5;
+}
+
+.container-logos-info div button{
+    background-color: #202024;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border:none;
+    transition: opacity 1s;
+}
+
+.container-logos-info div button i{
+    font-size: 15px;
+}
+
+//Animations
+.container-logos-info div ul li:hover{
+    background-color: #8257e5;
+    i{
+        color: white;
+    }
+}
+
+.container-logos-info div button:hover{
+    opacity: .8;
+}
