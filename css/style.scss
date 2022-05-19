@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,15 +7,12 @@
     outline: none;
     box-sizing: border-box;
     color: white;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     list-style: none;
 }
 
-li{
-    color: #a8a8b3;
-}
-
 //SECTION COMPANIES
+//------------------------------------------------------
 .container-companies{
     height: 100vh;
     background: rgb(17, 17, 18);
@@ -24,7 +23,6 @@ li{
 }
 
 .container-companies .container-texts{
-    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,25 +30,29 @@ li{
 }
 
 .container-companies .container-texts h2{
+    padding: 0 1.3rem;
     text-align: center;
-    width: 55%;
-    font-size: 3rem;
+    max-width: 600px;
+    font-size: 45px;
     margin-bottom: 15px;
 }
 
 .container-companies .container-texts p{
+    max-width: 600px;
+    padding: 0 1.7rem;
+    line-height: 1.5rem;
     text-align: center;
-    width: 52%;
     font-size: 1.1rem;
 }
 
-.container-imgs-companies{
+.container-companies ul{
+    padding: 0 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-imgs-companies img{
+.container-companies ul li img{
     width: 80%;
     height: 60%;
     margin-right: 25px;
@@ -61,82 +63,92 @@ li{
 }
 
 //FOOTER
+//--------------------------------------------------------
 footer{
-    height: 74vh;
     background: rgb(17, 17, 18);
     border-top: 1px solid rgba(grey, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
    
 }
 
-.container-info{
-    height: 55vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer li{
+    color: #a8a8b3;
 }
 
-.container-info .container-itens-info{
-    width: 100vw;
+.container-info{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 }
 
-.container-info .container-logo img{
+.container-info .container-logo-footer{
+   padding: 80px 0;
+}
+
+.container-info .container-logo-footer img{
     margin-bottom: 40px;
+    
 }
 
-.container-info .container-logo:nth-child(1) p{
+.container-info .container-logo-footer p{
     margin-bottom: 10px;
+    color: #a8a8b3;
 }
 
-.container-info ul{
-    margin-top: 5px;
-    width: 50vw;
+.container-info .container-list-nav{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    padding: 80px 0;
 }
 
-.container-info .container-itens-info ul div{
+.container-info .container-list-nav nav ul li:nth-child(1){
+    color: #e1e1e6;
+    font-weight: 700;
+}
+
+.container-info .container-list-nav nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 0 25px 0 0;
+    
+}
+
+.container-info .container-list-nav ul{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    align-items: flex-start;
 }
 
-.container-info .container-itens-info ul div li:nth-child(1){
-    color: white;
+.container-info .container-list-nav nav ul li{
+    line-height: 25px;
 }
-
-.container-info .container-itens-info ul div:nth-child(3){
-    margin-bottom: 69px;
-}
-
 
 .container-logos-info{
     border-top: 1px solid rgba(grey, 0.1);
     height: 18vh;
     display: flex;
     align-items: center;
-    padding: 0 140px 0 140px;
+    justify-content: center;
 }
 
-.container-logos-info div {
-    height: 100%;
+.container-logos-info .container-logo-list{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
-.container-logos-info div ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-logos-info .container-logo-list ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: .5rem;
 }
 
-.container-logos-info div ul li{
+.container-logos-info .container-logo-list ul li{
     background-color: #202024;
     border-radius: 3px;
     width: 50px;
@@ -147,27 +159,33 @@ footer{
 
 }
 
-.container-logos-info div ul li i{
+.container-logos-info .container-logo-list ul li i{
     font-size: 25px;
     color: #8257e5;
 }
 
-.container-logos-info div button{
+.container-logos-info .container-button {
+    margin-left: 20px;
+}
+
+.container-logos-info .container-logo-list button{
     background-color: #202024;
     border-radius: 3px;
     width: 50px;
     height: 50px;
     font-size: 25px;
     border:none;
+    margin-left: 10%;
     transition: opacity 1s;
 }
 
-.container-logos-info div button i{
+.container-logos-info .container-logo-list button i{
     font-size: 15px;
 }
 
 //Animations
-.container-logos-info div ul li:hover{
+//-----------------------------------------------------------
+.container-logos-info .container-logo-list ul li:hover{
     background-color: #8257e5;
     i{
         color: white;
@@ -176,4 +194,66 @@ footer{
 
 .container-logos-info div button:hover{
     opacity: .8;
+}
+
+//RESPONSIVIDADE
+//-----------------------------------------------------------------
+
+@media (max-width: 512px){
+    .container-companies .container-texts h2{
+        font-size: 30px;
+
+    }
+
+    .container-companies ul{
+        display: inline;
+        max-width: 50vw;
+    }
+    .container-companies .container-list{
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 20px 0;
+        
+    }
+
+    .container-companies ul li img{
+        width: 60%;
+        height: 40%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .container-companies .container-list ul:nth-child(1) li:nth-child(6) img{
+        width: 40%;
+        height: 30%;
+    }
+
+    .container-companies ul li{
+        text-align: center;
+    }
+}
+
+@media (max-width: 856px){
+    .container-info{
+        flex-direction: column;
+        padding: 0 0 0 20px;
+    }
+
+    .container-info .container-list-nav{
+        padding: 30px 0;
+    }
+
+}
+
+@media (max-width: 728px){
+    .container-info .container-list-nav nav{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .container-logos-info .container-logo-list ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
