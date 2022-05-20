@@ -1,3 +1,6 @@
+@import "main";
+@import "style1";
+
 html,body {
     font-family: Roboto,sans-serif;
     color: #a8a8b3;
@@ -84,6 +87,7 @@ ul {
   }
   
   .styles_subtitle__1hPHs {
+    margin: 30px 0px;
     font-size: 48px;
     line-height: 54px;
     text-align: center; 
